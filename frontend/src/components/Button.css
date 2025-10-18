@@ -1,0 +1,22 @@
+.btn {
+    padding: 8px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: forestgreen;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.btn:hover {
+    padding: 6px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: forestgreen;
+    border-radius: 4px;
+    border: 2px solid forestgreen;
+}

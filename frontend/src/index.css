@@ -1,0 +1,630 @@
+/* layout */
+/* :root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+
+ body {
+  background: #096ae8c3;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  background: #ededebd4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ededebd4;
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(5, 0, 0);
+}
+
+h3 {
+  font-size: x-large;
+  color: #fcfafa;
+}
+
+.create {
+  background-color: dodgerblue;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+input[type="radio"] {
+  display: inline;
+  width: 10%;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  width: 98%;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: forestgreen;
+  width: 40%;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgba(14, 176, 14, 0.776);
+}
+
+/* navbar */
+/* nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+/* auth forms */
+/* form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+} */
+
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ /* font family {
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  } 
+    
+}*/
+  
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+}
+
+header {
+  background: #fff;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.homepage, .ContactUs, .profile, .ViewResults, .create-result {
+    display: flex;
+    height: 90vh;
+    align-items: top;
+    justify-content: left;
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* homepage */
+.homepage {
+  position: relative;
+  display: grid;
+  gap: 600px;
+  left: -1.5%;
+
+  /* right: 1%; */
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 103%;
+  height: 100%;
+  /* display: grid; */
+  /* grd-template-columns: 3fr 1fr; */
+  /* gap: 600px; */
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img3.jpg);
+  background-size: cover;
+  opacity: 1;
+  /* background-attachment: fixed; */
+}
+
+.homepage::after {
+  content: "Welcome To PSI Ψ";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  opacity: 1;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 60px;
+}
+
+/* ViewResult */
+
+.ViewResults {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: 90vh;
+  /* content: ""; */
+  /* width: 103%; */
+  /* height: 100%; */
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img4.jpg);
+  background-size: cover;
+  opacity: 1;
+}
+
+.ContactUs {
+  display: flex;
+  height: 90vh;
+  align-items: top;
+  justify-content: left;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img1.jpg);
+  background-size: cover;
+}
+
+.formm {
+  /* position: absolute; */
+  display: block;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 500px;
+  height: 410px;
+  text-align: left;
+  margin: auto;
+  margin-top: 200px;
+  font-size: 3rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.create-result {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 3rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img8.jpg);
+  background-size: cover;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: forestgreen;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: -90px;
+}
+nav a {
+  margin-left: 10px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+header .results {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-size: small;
+  margin-left: 20px;
+  font-size: 19px;
+  margin-right: 2rem;
+  height: 10vh;
+
+ margin: 1px auto;
+  padding: 20px;
+  background: #fff;
+}
+
+.results {
+  justify-content: space-between;
+}
+
+/* .results li {
+  margin-right: 2rem;
+  font-size: 18px
+} */
+
+.results a {
+  color: #d29a0a;
+ text-decoration: none; 
+}
+
+
+.dropdown {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #090909;
+  min-width: 120px;
+  box-shadow: 0px -5px 0px 0px #b1820ab3;
+  padding: 12px 16px;
+  /* z-index: 1; 
+}*/
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* auth forms */
+form.signup, form.login, form.forgot-password, form.reset-password {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+/* pages {
+  display: flex;
+  height: 90vh;
+  align-items: top;
+  justify-content: left;
+} */
+
+.login-page {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img7.jpg);
+  background-size: cover;
+  background-position: 0vh;
+}
+
+.login {
+  position: absolute;
+}
+
+.forgot-password-text a{
+  display: block;
+  text-align: right;
+  color: #d29a0a;
+  
+}
+
+.forgot-password-page {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img7.jpg);
+  background-size: cover;
+  background-position: 0vh;
+}
+
+.reset-password {
+  /* position: absolute; */
+  position: none;
+}
+
+.reset-password-page {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img7.jpg);
+  background-size: cover;
+  background-position: 0vh;
+}
+
+.forgot-password {
+  position: absolute;
+}
+
+.signup-page {
+  background-image: url(C:\Users\OSCAR\Desktop\PSI\frontend\images\img7.jpg);
+  background-size: cover;
+}
+
+.create, .login, .forgot-password, .reset-password {
+  display: grid;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 500px;
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+input[type="radio"] {
+  display: inline;
+  width: 10%;
+}
+
+select {
+  display: block;
+  width: 15%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #0b0808;
+  border-radius: 5px;
+  background-color: #c8c5c554;
+  color: #0b0808;
+}
+
+textarea {
+  resize: none;
+  width: 98%;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+form p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  color: firebrick;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: rgba(9, 173, 69, 0.834);
+}
+
+/* paginated table */
+.expand {
+  width: 100%;
+  height: 90%;
+  opacity: 0.9;
+}
